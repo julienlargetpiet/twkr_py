@@ -248,8 +248,6 @@ class unnester():
 
                         min_ -= nb
 
-                    return verify(diff_l2=diff_l2, min_=min_)
-
             cnt = 0
 
             for lst in inpt_l:
