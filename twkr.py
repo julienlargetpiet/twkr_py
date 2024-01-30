@@ -214,7 +214,7 @@ class unnester():
 
                         if pre_val_str[i + 1] != pre_val_str[i] or pre_val_str[i] != "9":
 
-                            all_eq == 0
+                            all_eq = 0
 
                 if round(pre_val * (10 ** sensi), 0) != 0 and all_eq != 1:
 
