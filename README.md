@@ -2,8 +2,6 @@
 
 This package will receive others functions.
 
-## spe_charf
-
 ### *advs*
 
 ### Description
@@ -58,8 +56,6 @@ As this fnction is recursive, some parameters should not be altered, on ly the a
 
 `sub_excl` is a list containing all the sub-patterns that excludes the filenames or foldernames from the return list if those are composed of these sub-patterns. 
 
-## globe
-
 ### *distance*
 
 ### Description
@@ -81,8 +77,6 @@ Allow to return the distances between multiple geographical coordinates and anot
 `long_l` is a list containing the longitudes of the geographical points to be compared to the established point
 
 `alt_l` is a list containing the altitudes of the geographical points to be compared to the established point, if not given the distances calculated won't take in count this parameter
-
-## unnester
 
 Class composed of functions for list manipulation.
 
@@ -124,7 +118,7 @@ Function whose goal is to manipulate nested list.
 
 ### Usage \
 
-`>unnester.ns(input_l, dim_end=1, strt_l=[], rtn_l=[], id_rec_main=0, wrk_l=None, flag_l=[])`
+`>ns(input_l, dim_end=1, strt_l=[], rtn_l=[], id_rec_main=0, wrk_l=None, flag_l=[])`
 
 The two parameters you need to know are input_l and dim_end. The fact that it is a recursive function requires the presence of the others paramters that are used each iteration of the recursive function.
 
@@ -135,15 +129,15 @@ The two parameters you need to know are input_l and dim_end. The fact that it is
 
 \
 
-`>unnester.ns(input_l=[1, [5, [[2], 4, [23, 3, 3]]], 2, 3334, [4, [55, 56], 7, [77, [66, 67], 78], 2, [33, 5]], 3, [5, 6], 4], dim_end=3, strt_l=[], rtn_l=[], flag_l=[])` \
+`>ns(input_l=[1, [5, [[2], 4, [23, 3, 3]]], 2, 3334, [4, [55, 56], 7, [77, [66, 67], 78], 2, [33, 5]], 3, [5, 6], 4], dim_end=3, strt_l=[], rtn_l=[], flag_l=[])` \
 
 `[1, 5, [2], 4, [23, 3, 3], 2, 3334, 4, 55, 56, 7, 77, [66, 67], 78, 2, 33, 5, 3, 5, 6, 4]` \
 
-`>unnester.ns([1, [2], 3], dim_end=1, strt_l=[], rtn_l=[], flag_l=[])` \
+`>ns([1, [2], 3], dim_end=1, strt_l=[], rtn_l=[], flag_l=[])` \
 
 `[1, [2], 3]` \
 
-`>unnester.ns([1, [2], 3], dim_end=2, strt_l=[], rtn_l=[], flag_l=[])` \
+`>ns([1, [2], 3], dim_end=2, strt_l=[], rtn_l=[], flag_l=[])` \
 
 `[1, 2, 3]` \
 
